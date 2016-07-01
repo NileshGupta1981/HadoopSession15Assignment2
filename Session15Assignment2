@@ -1,0 +1,14 @@
+--Answer1
+
+select country, sum (total_count) from olympic_orcfile where upper(sport) = 'SWIMMING' group by country;
+
+--Answer2
+select year , sum (total_count) from olympic_orcfile where Upper(country) = 'INDIA' group by year;
+
+
+--Answer3
+select country, sum (total_count) from olympic_orcfile group by country;
+
+
+--Answer4
+select country, sum (gold_count) from olympic_orcfile group by country;
